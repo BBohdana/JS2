@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      //  - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+      //      Вивести кожну змінну за допомогою: console.log , alert, document.write
+      //   - Переприсвоїти кожній змінній з завдання значення на довільне.
+      //      Вивести кожну змінну за допомогою: console.log , alert, document.write
+        let r = 'hello';
+        let q = 'owu';
+        let x = 'com'
+        let d = 'ua';
+        document.write(r+q+"."+x+"."+d)
+        r = 555;
+        q = 666;
+        x = 777;
+        console.log(r+q+x);
+        let aa = 1;
+        console.log(aa);
+        aa = 333;
+        console.log(aa);
+        let bb = 10;
+        console.log(bb);
+        let cc = -999;
+        console.log(cc);
+        cc = "rrrrr";
+        console.log(cc);
+        let dd = 123;
+        alert(dd);
+        dd = "errr";
+        console.log(dd);
+        let ee = 3.14;
+        console.log(ee);
+        ee = 45;
+        console.log(ee)
+        let ff = 2.7;
+        console.log(ff);
+        ff = " mind";
+        document.write(ff);
+        let g = 16;
+        console.log(g);
+        g = "ttt";
+        console.log(g);
+        let gg = 'true';
+        console.log(gg);
+        gg = "ppp";
+        let ggg = 'false';
+        console.log(ggg);
+        ggg = "rrr";
+        console.log(gg+ggg);
+
+
+      //  - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+      let firstName ='Bohdana';
+      let middleName = 'Boichuk';
+      let lastName = 'Ivanivna';
+      let person = (`${firstName} ${middleName} ${lastName}`);
+      console.log(person);
+
+      //  - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+      //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+      let age = 25;
+      let p = prompt('enter age');
+      console.log(p);
+      console.log(age);
+      let name = 'Bohdana';
+      let n = prompt('enter name');
+      console.log(n);
+      console.log(name);
+      let surname = 'Ivanivna';
+      let s = prompt('enter surname');
+      console.log(s);
+      console.log(surname);
+
+      console.log(`Вітаю, ${name} ${surname}. Тобі ${age} років`);
+
+      //  - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+      //      let a = 100; let b = '100'; let c = true;
+      let a = 100;
+      console.log(typeof a);
+      let b = '100';
+      console.log(typeof b);
+      let c = true;
+      console.log(typeof c);
+      //  - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+      //    В однакових виразах не використовувати однакові оператори!!!
+      // 5 ? 6 -> true
+      // 5 ? 6 -> false
+      // 5 ? 6 -> false
+      // 5 ? 6 -> false
+      // 10 ? 10 -> true
+      // 10 ? 10 -> true
+      // 10 ? 10 -> false
+      //10 ? 10 -> false
+      // 10 ? 10 -> false
+      // 123 ? '123' -> false
+      // 123 ? '123' -> true
+
+      console.log(5 !== 6); //true
+      console.log(5 > 6); //false
+      console.log(5 === 6); //false
+      console.log(5 >= 6); //false
+      console.log(10 === 10); //true
+      console.log(10 >= 10);  //true
+      console.log(10 !== 10); //false
+      console.log(10 > 10); //false
+      console.log(10 < 10); //false
+      console.log(123 !== '123');  //true
+      console.log(123 < '123');  //false
+
+      // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+      // let str = "20";
+      // let a = 5;
+      // document.write(str + a + "<br/>");
+      // document.write(str - a + "<br/>");
+      // document.write(str * "2" + "<br/>");
+      // document.write(str / 2 + "<br/>");
+
+        let str = "20";
+        let k = 5;
+        document.write(str + k + "<br/>"); // "20" відображаєтьмя як стрінга, і тому 5 просто дописується поряд
+        document.write(str - k + "<br/>"); // 20 переводиться в число
+        document.write(str * "2" + "<br/>"); // 20 множиться на 2, тому що воно прирівнюється до числа
+        document.write(str / 2 + "<br/>"); // 20 диліться на 2
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
