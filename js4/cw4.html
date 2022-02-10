@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //1 створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+    function min(a,b,c) {
+        if (a<b && a<c) {
+            console.log(a);
+        }
+        else if (b<a && b<c) {
+            console.log(b);
+        }
+        else if (c<a && c<b) {
+            console.log(c);
+        }
+    }
+    min(4,6,8);
+
+
+    //2 створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+    function max(a,b,c) {
+        if (a>b && a>c) {
+            console.log(a);
+        } else if (b>a && b>c) {
+            console.log(b);
+        } else if (c>a && c>b) {
+            console.log(c);
+        }
+    }
+    max(5,67,34);
+
+    //3 створити функцію яка повертає найбільше число з масиву
+    let maxArray = [56,89,88];
+    function numArray(array) {
+        let max = array[0];
+        for (const element of array) {
+            if (element>max) {
+                max = element;
+            }
+        }
+        return max;
+
+    }
+    document.write(numArray(maxArray));
+
+    //4 створити функцію яка повертає найменьше число з масиву
+    let minArray = [34,55,88,32,74];
+    function minNumbers(array) {
+        let min = array[0];
+        for (const arrayElement of array) {
+            if (arrayElement<min) {
+                min = arrayElement;
+            }
+        }
+        return min;
+    }
+    document.write(minNumbers(minArray));
+
+
+    //5- створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+    function sum(arr) {
+        let result = 0;
+        for (const arrElement of arr) {
+            result = result + arrElement
+        }
+        return result;
+    }
+    console.log(sum(minArray));
+
+
+    //6 створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+    function avg(nums) {
+        return sum(minArray) / minArray.length
+    }
+    console.log(avg(minArray));
+
+
+    //7 створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+
+    function minmax(nums) {
+        let min = minArray[0];
+        let max = minArray[0];
+        for (const number of minArray) {
+            if (number > max){
+                max = number}
+            if (number < min) {
+                min = number
+            }
+
+        }
+        console.log(max);
+        return min;
+    }
+    minmax(minArray);
+
+    //8 створити функцію яка заповнює масив рандомними числами
+    //(цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+    function randomizer(arr) {
+        for (let i = 0; i < 10; i++) {
+            arr[i] = Math.round(Math.random()*100)
+        }
+        return arr;
+    }
+    console.log(randomizer([]));
+
+
+    //9 створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+    function randomizer2(arr) {
+        for (let i = 0; i < 10; i++) {
+            arr[i] = Math.round(Math.random()*limit)
+        }
+        return arr;
+    }
+    console.log(randomizer([]));
+
+
+    //10 Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+    function reverseArr(arr) {
+        for (let i = minArray.length-1; i >= 0; i--) {
+            console.log(minArray[i])
+        }
+    }
+    reverseArr(minArray);
+
+</script>
+</body>
+</html>

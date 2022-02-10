@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1
+    function square(a,b) {
+        return a * b;
+    }
+    let result = square(10,20);
+    console.log(result);
+
+    //2
+    function circle(r) {
+        let p = 3.14;
+        return p * r ** 2;
+    }
+    let circleS = circle(7)
+    console.log(circleS);
+
+    //3
+    function cylinder(r,h) {
+        let p = 3.14;
+        return p * (r ** 2) * h;
+    }
+    let cylinderV = cylinder(5,7);
+    console.log(cylinderV)
+
+    //4
+    function array(arr,size,limit) {
+        for (let i = 0; i < size; i++) {
+            arr[i] = Math.round(Math.random()*limit);
+
+        }
+        return arr;
+    }
+    console.log(array([],10,30 ));
+
+    //5
+    function t(text) {
+        document.write(`<p>${text}</p>`)
+    }
+    t('Lorem ipsum dolor sit amet.')
+
+
+    //6
+    function list(a) {
+        document.write(`<ul>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`<li>${a}</li>`);
+        document.write(`</ul>`);
+
+    }
+    list('item');
+
+    //7
+    function listWithNumber(a,size) {
+        document.write(`<ul>`);
+        for (let i = 0; i < size; i++) {
+            document.write(`<li>${a}</li>`)
+        }
+        document.write(`</ul>`)
+    }
+    listWithNumber('item', 7);
+
+    //8
+    let array2 = [true, 'word', 35]
+    function listArr(arr) {
+        document.write(`<ul>`)
+        for (let i = 0; i < array2.length; i++) {
+            document.write(`<li>${arr[i]}</li>`)
+        }
+        document.write(`</ul>`)
+    }
+    listArr(array2);
+
+
+    //9
+    let arrayWithObjects = [
+        {id:555, age:25, name: 'Taras'},
+        {id:335, age:20, name: 'Sasha'},
+        {id:678, age:15, name: 'Sonia'}
+    ]
+    function objects(arrObj) {
+        for (const arrObjElement of arrObj) {
+            document.write(`id:${arrObjElement.id} `);
+            document.write(`age:${arrObjElement.age} `);
+            document.write(`name:${arrObjElement.name}`)
+        }
+    }
+    objects(arrayWithObjects);
+
+
+
+
+</script>
+</body>
+</html>
