@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //1
+    let time = +prompt('enter time');
+    if (time >= 0 && time <= 15)
+    {
+        document.write('first quarter'+ "<br/>");
+    }
+    else if (time > 15 && time <= 30) {
+        document.write('second quarter'+ "<br/>");
+    }
+    else if (time > 30 && time <= 45) {
+        document.write('third quarter'+ "<br/>");
+    }
+    else if (time > 45 && time <= 59) {
+        document.write('firth quarter'+ "<br/>");
+    }
+
+
+    //2
+    let day = +prompt('enter a day');
+    if (day >= 1 && day <=10) {
+        document.write('first decade'+ "<br/>");
+    } else if (day >= 11 && day <=20) {
+        document.write('second decade'+ "<br/>");
+    } else if (day >= 21 && day <=31) {
+        document.write('third decade'+ "<br/>");
+    }
+
+    //3
+    let test = true;
+    if (test === true) {
+        console.log('вірно');
+    } else {
+        console.log('невірно');
+    }
+
+    //let test = 'true'? 'вірно' : 'невірно';
+    //console.log(test);
+
+    //4
+    let a = +prompt('enter number 1, 0, -3');
+    if (a !== 0) {
+        document.write('вірно'+ "<br/>");
+    } else {
+        document.write('невірно'+ "<br/>");
+    }
+
+    //5
+    let value = +prompt('enter a day');
+    switch (value) {
+        case 1:
+            document.write('training');
+            break;
+        case 2:
+            document.write('study');
+            break;
+        case 3:
+            document.write('date');
+            break;
+        case 4:
+            document.write('meeting');
+            break;
+        case 5:
+            document.write('work');
+            break;
+        case 6:
+            document.write('film');
+            break;
+        case 7:
+            document.write('dancing');
+            break;
+        default:
+            document.write('no plans');
+    }
+
+    //6
+    let year = +prompt('скільки днів у році?');
+    if (year % 4 === 0) {
+        console.log('високосний')
+    }
+    else {
+        console.log('невисокосний');
+    }
+
+    //7
+    let name = prompt('Яка «офіційна» назва JavaScript?');
+    if (name === 'ECMAScript') {
+        console.log('Правильно!');
+    } else {
+        console.log('Не знаєте? ECMAScript!');
+    }
+
+</script>
+</body>
+</html>

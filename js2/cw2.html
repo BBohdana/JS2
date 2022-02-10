@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1
+    let a = 10;
+    let b = 7;
+    if (a < b) {
+        console.log(b);
+    } else if(b < a) {
+        console.log(a);
+    } else if(a === b) {
+        console.log(a+'and'+b);
+    }
+
+    //2
+    let flat = 25;
+    if (flat >= 1 && flat <= 20) {
+        console.log('first');
+
+    } else if(flat >= 21 && flat <= 48) {
+        console.log('second');
+    } else if(flat >= 49 && flat <= 90) {
+        console.log('third');
+    }
+
+    //3
+    let n = +prompt('enter the number');
+    if (n === 10) {
+        console.log('ВІРНО');
+    } else if (n !== 10) {
+        console.log('НЕВІРНО');
+    }
+
+
+    //4
+    let x = {
+        name: 'john',
+        age: 25
+    }
+    if (typeof x === 'number') {
+        document.write(1);
+    }
+    else if (typeof x === 'string') {
+        document.write(2); }
+    else if (typeof x === 'boolean') {
+        document.write(3); }
+    else if (typeof x === 'object') {
+        document.write(4); }
+    else {
+        document.write('no type');
+    }
+
+
+
+    //5
+    let t = +prompt('яка температура?');
+    if (t >= 10 && t <= 22)  {
+        document.write('Йдемо ВЧИТИСЯ!');
+    } else {
+        document.write('Вчимося ОНЛАЙН!');
+    }
+
+    //6
+    let value = +prompt('Введіть цифру від 1 до 5');
+    switch (value) {
+        case 1:
+            document.write('Авто');
+            break;
+        case 2:
+            document.write('Мото');
+            break;
+        case 3:
+            document.write('Телефон');
+            break;
+        case 4:
+            document.write('Квартира');
+            break;
+        case 5:
+            document.write('100000000');
+            break;
+        default:
+            document.write('Невірне число');
+            break; }
+
+
+</script>
+</body>
+</html>
