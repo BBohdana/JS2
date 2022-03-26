@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  //    Всі функції повинні бути описані стрілочним типом!!!!
+  //    - створити функцію яка обчислює та повертає площу прямокутника висотою
+  let rect = (a, b) => {
+    return a * b;
+  }
+  console.log(rect(10,20));
+
+  //   - створити функцію яка обчислює та повертає площу кола
+  const p = 3.14;
+  const circle = (r) => {
+    return p * r ** 2;
+  }
+  console.log(circle(6));
+
+  //  - створити функцію яка обчислює та повертає площу циліндру
+  const cylinder = (r, h) => {
+    return p * (r ** 2) * h;
+  }
+  console.log(cylinder(6,8));
+
+  //   - створити функцію яка приймає масив та виводить кожен його елемент
+  let arr = [56,78,44,88,990];
+  const nums = (arr1) => {
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i])
+    }
+  }
+  nums(arr);
+
+  //   - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
+  const textCreator = (a) => {
+    document.write(`<p>${a}</p>`)
+  }
+
+  textCreator('adadaas');
+
+  //   - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+  const list = (b) => {
+    document.write(`<ul>
+  <li>${b}</li>
+  <li>${b}</li>
+  <li>${b}</li>
+  </ul>`)
+  }
+  list('item');
+
+
+  //  - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+  const list2 = (c,size) => {
+    for (let i = 0; i < size; i++) {
+      document.write(`<ul>
+  <li>${c}</li>
+  </ul>`)
+    }
+  }
+  list2('gggg',5);
+  //  - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+  let arrprim = ['love', 55, true, 43]
+  const listForArr = (ar) => {
+    for (let i = 0; i < arrprim.length; i++) {
+      document.write(`<ul>
+  <li>${ar[i]}</li>
+  </ul>`)
+    }
+  }
+  listForArr(arrprim);
+  //  - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+
+  let arrWithObj = [
+    {name: 'Den', age: 33, id:222},
+    {name: 'Tom', age: 21, id:223},
+    {name: 'Tedi', age: 78, is:224}
+  ]
+  const objects = (obj) => {
+    for (const objElement of obj) {
+      document.write(`id:${objElement.id} `);
+      document.write(`age:${objElement.age} `);
+      document.write(`name:${objElement.name}<br/>`);
+    }
+  }
+  objects(arrWithObj);
+
+
+</script>
+</body>
+</html>

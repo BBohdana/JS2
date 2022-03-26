@@ -132,22 +132,22 @@ let array = [];
 
   class Prince {
 
-      constructor(PrinceName, PrinceAge, Shoe) {
-          this.PrinceName = PrinceName;
-          this.PrinceAge = PrinceAge;
-          this.Shoe = Shoe;
+      constructor(princeName, princeAge, shoe) {
+          this.princeName = princeName;
+          this.princeAge = princeAge;
+          this.shoe = shoe;
       }
   }
 
 let prince = new Prince('Artur', 25, 38);
     for (let arrayElement of array) {
         for (let arrayElementKey in arrayElement) {
-            if (prince.Shoe === arrayElement.footSize) {
+            if (prince.shoe === arrayElement.footSize) {
                 console.log(arrayElement.name);
             }
         }
     }
-   let princess =  array.find(cinderella => cinderella.footSize === prince.Shoe);
+   let princess =  array.find(cinderella => cinderella.footSize === prince.shoe);
     console.log(princess);
 
 </script>
