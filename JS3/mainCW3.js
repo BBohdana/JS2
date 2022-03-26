@@ -26,11 +26,6 @@ while (i < array5.length) {
 }
 
 
-let array6 = [2,17,13,6,22,31,45,66,100,-18];
-for (let i = 1; i < array6.length; i+=2) {
-    console.log(array6[i]);
-}
-
 let array7 = [2,17,13,6,22,31,45,66,100,-18];
 for (let i=0; i< array7.length; i++) {
     if (array7[i] % 3 ===0) {

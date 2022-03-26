@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+    // створити пустий масив, наповнити його 10 об'єктами new User(....)
+    function User(id, name, surname, email, phone) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+    }
+    let users = [];
+    let user1 = new User(1, 'max', 'antonov', 'njnsjkdfjs@gmail.com', 347375977);
+    users.push(user1);
+    let user2 = new User(2, 'kolia', 'antonov', 'njnsjfhgfjs@gmail.com', 347778989977);
+    users.push(user2);
+    let user3 = new User(3, 'masha', 'loboda', 'njnuuzuzfjs@gmail.com', 34777543245);
+    users.push(user3);
+    let user4 = new User(4, 'vitia', 'morozow', 'morozfjs@gmail.com', 3434989977);
+    users.push(user4);
+    let user5 = new User(5, 'vasia', 'seniuk', 'njhghgnhgfjs@gmail.com', 33212289977);
+    users.push(user5);
+    let user6 = new User(6, 'anton', 'antonov', 'njnhzhhgfjs@gmail.com', 333228989977);
+    users.push(user6);
+    let user7 = new User(7, 'marusia', 'kostiuk', 'ngjhgfjs@gmail.com', 3436557989977);
+    users.push(user7);
+    let user8 = new User(8, 'sasha', 'antik', 'njnsjfdsss@gmail.com', 347343389977);
+    users.push(user8);
+    let user9 = new User(9, 'oksana', 'loza', 'njnsddfgfjs@gmail.com', 34322289977);
+    users.push(user9);
+    let user10 = new User(10, 'ksenia', 'boiko', 'nhhhgfjs@gmail.com', 347776977);
+    users.push(user10);
+    console.log(users);
+
+
+
+    // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+   let even = users.filter(function (user) {
+       return user.id %2 === 0;
+   })
+    console.log(even);
+
+   //  // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+    let growing = users.sort(function (current, next) {
+        return current.id - next.id;
+    })
+    console.log(growing);
+   //  // - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+   //  // створити пустий масив, наповнити його 10 об'єктами Client
+
+class Client {
+    constructor(id, name, surname, email, phone, order) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.phone = phone;
+        this.order = order;
+    }
+
+}
+    let clients = [];
+    let client1 = new Client(1, 'max', 'antonov', 'njnsjkdfjs@gmail.com', 347375977, ['apple', 'orrange', 'cherry']);
+    clients.push(client1);
+    let client2 = new Client(2, 'kolia', 'antonov', 'njnsjfhgfjs@gmail.com', 347778989977, ['phone', 'airpods', 'lightning']);
+    clients.push(client2);
+    let client3 = new Client(3, 'masha', 'loboda', 'njnuuzuzfjs@gmail.com', 34777543245, ['flowers', 'sandwich']);
+    clients.push(client3);
+    let client4 = new Client(4, 'vitia', 'morozow', 'morozfjs@gmail.com', 3434989977, ['jam', 'bread']);
+    clients.push(client4);
+    let client5 = new Client(5, 'vasia', 'seniuk', 'njhghgnhgfjs@gmail.com', 33212289977, ['bed', 'pillow']);
+    clients.push(client5);
+    let client6 = new Client(6, 'anton', 'antonov', 'njnhzhhgfjs@gmail.com', 333228989977, ['towel', 'bag']);
+    clients.push(client6);
+    let client7 = new Client(7, 'marusia', 'kostiuk', 'ngjhgfjs@gmail.com', 3436557989977, ['laptop', 'cup']);
+    clients.push(client7);
+    let client8 = new Client(8, 'sasha', 'antik', 'njnsjfdsss@gmail.com', 347343389977, ['calender', 'table']);
+    clients.push(client8);
+    let client9 = new Client(9, 'oksana', 'loza', 'njnsddfgfjs@gmail.com', 34322289977, ['pen', 'pencil']);
+    clients.push(client9);
+    let client10 = new Client(10, 'ksenia', 'boiko', 'nhhhgfjs@gmail.com', 347776977, ['door', 'wardrobe']);
+    clients.push(client10);
+    console.log(clients);
+
+    // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+    let ordersNumber = clients.sort(function (current, next) {
+         return current.order.length - next.order.length;
+     })
+     console.log(ordersNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
